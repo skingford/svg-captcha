@@ -197,9 +197,9 @@ func (sr *SVGRenderer) addNoiseToSVG(svg *SVGElement, config *Config) {
 
 	noiseGen := NewNoiseGenerator()
 
-	// Add random lines
-	lines := noiseGen.GenerateLines(config.Noise*2, sr.width, sr.height, sr.colorMgr)
-	svg.Lines = append(svg.Lines, lines...)
+	// Add random curved lines (now using PathElements)
+	curvedLines := noiseGen.GenerateLines(config.Noise*2, sr.width, sr.height, sr.colorMgr)
+	svg.Paths = append(svg.Paths, curvedLines...)
 
 	// Add random dots
 	circles := noiseGen.GenerateDots(config.Noise*3, sr.width, sr.height, sr.colorMgr)

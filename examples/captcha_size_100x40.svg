@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100" height="40" viewBox="0 0 100 40" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="100" height="40" fill="#f0f0f0"></rect>
+  <text x="4.3904" y="23.173066666666667" fill="#e74c3c" font-size="20" font-family="Arial, sans-serif" transform="rotate(-6.0 4.39 23.17)">3</text>
+  <text x="27.956" y="25.355866666666667" fill="#8e44ad" font-size="20" font-family="Arial, sans-serif" transform="rotate(-6.8 27.96 25.36)">+</text>
+  <text x="52.874" y="24.08866666666667" fill="#2980b9" font-size="20" font-family="Arial, sans-serif" transform="rotate(-5.7 52.87 24.09)">3</text>
+  <text x="72.8678" y="24.42706666666667" fill="#2980b9" font-size="20" font-family="Arial, sans-serif" transform="rotate(-0.2 72.87 24.43)">=</text>
+  <line x1="60.12" y1="17.56" x2="31.330000000000002" y2="39.056000000000004" stroke="#a9dfbf" stroke-width="1.7846000000000002"></line>
+  <line x1="79.86999999999999" y1="26.972" x2="52.94" y2="11.628" stroke="#bdc3c7" stroke-width="1.7639"></line>
+  <circle cx="42.089999999999996" cy="5" r="3.8662" fill="#95a5a6"></circle>
+  <circle cx="2.74" cy="2.9160000000000004" r="2.9329" fill="#d5dbdb"></circle>
+  <circle cx="11.08" cy="11.792" r="1.1701" fill="#95a5a6"></circle>
+</svg>

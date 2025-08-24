@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="250" height="80" viewBox="0 0 250 80" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="250" height="80" fill="#cc9966"></rect>
+  <text x="56.660599999999995" y="54.12253333333334" fill="#8e44ad" font-size="28" font-family="Arial, sans-serif" transform="rotate(6.2 56.66 54.12)">9</text>
+  <text x="90.1358" y="48.96013333333334" fill="#e67e22" font-size="28" font-family="Arial, sans-serif" transform="rotate(8.0 90.14 48.96)">+</text>
+  <text x="123.08" y="53.91373333333334" fill="#e67e22" font-size="28" font-family="Arial, sans-serif" transform="rotate(2.9 123.08 53.91)">9</text>
+  <text x="157.76420000000002" y="53.388733333333334" fill="#c0392b" font-size="28" font-family="Arial, sans-serif" transform="rotate(-3.8 157.76 53.39)">=</text>
+  <line x1="233.57500000000002" y1="19.728" x2="68.775" y2="79.368" stroke="#bdc3c7" stroke-width="1.6196"></line>
+  <line x1="183.65" y1="12.16" x2="117.9" y2="1.3359999999999999" stroke="#aed6f1" stroke-width="0.6236"></line>
+  <line x1="163.525" y1="15.696000000000002" x2="55.800000000000004" y2="20.928" stroke="#bdc3c7" stroke-width="0.9725"></line>
+  <line x1="157.5" y1="7.504" x2="120.225" y2="6.4159999999999995" stroke="#d5dbdb" stroke-width="0.54155"></line>
+  <line x1="237.8" y1="18.52" x2="89.52499999999999" y2="50.152" stroke="#bdc3c7" stroke-width="1.4922499999999999"></line>
+  <line x1="205.15" y1="78.776" x2="182.10000000000002" y2="74.424" stroke="#a9dfbf" stroke-width="1.0373"></line>
+  <circle cx="55.9" cy="51.944" r="1.3705" fill="#95a5a6"></circle>
+  <circle cx="191.125" cy="70.376" r="1.1971" fill="#f7dc6f"></circle>
+  <circle cx="148.725" cy="70.824" r="1.7833" fill="#f8c471"></circle>
+  <circle cx="202.2" cy="4.912" r="1.3702" fill="#f8c471"></circle>
+  <circle cx="177.95" cy="79.848" r="2.893" fill="#aed6f1"></circle>
+  <circle cx="18.599999999999998" cy="28.919999999999998" r="2.5528" fill="#ecf0f1"></circle>
+  <circle cx="107.52499999999999" cy="79.71199999999999" r="1.5030999999999999" fill="#95a5a6"></circle>
+  <circle cx="86.225" cy="58.72" r="3.2332" fill="#95a5a6"></circle>
+  <circle cx="100.3" cy="15.847999999999999" r="2.0296000000000003" fill="#95a5a6"></circle>
+</svg>

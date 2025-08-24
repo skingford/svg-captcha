@@ -82,57 +82,57 @@ func (ng *NoiseGenerator) GenerateDots(count, width, height int, colorMgr *Color
 func (ng *NoiseGenerator) generateCurvePath(startX, startY, endX, endY, width, height float64) string {
 	// Choose curve type randomly
 	curveType, _ := secureRandomInt(3)
-	
+
 	switch curveType {
 	case 0:
 		// Quadratic Bezier curve with single control point
 		controlX := (startX + endX) / 2
 		controlY := (startY + endY) / 2
-		
+
 		// Add random offset to control point
 		offsetX, _ := secureRandomFloat(-width*0.3, width*0.3)
 		offsetY, _ := secureRandomFloat(-height*0.3, height*0.3)
 		controlX += offsetX
 		controlY += offsetY
-		
+
 		return fmt.Sprintf("M%.2f,%.2f Q%.2f,%.2f %.2f,%.2f",
 			startX, startY, controlX, controlY, endX, endY)
-		
+
 	case 1:
 		// Cubic Bezier curve with two control points
 		control1X := startX + (endX-startX)*0.33
 		control1Y := startY + (endY-startY)*0.33
 		control2X := startX + (endX-startX)*0.67
 		control2Y := startY + (endY-startY)*0.67
-		
+
 		// Add random offsets
 		offset1X, _ := secureRandomFloat(-width*0.2, width*0.2)
 		offset1Y, _ := secureRandomFloat(-height*0.2, height*0.2)
 		offset2X, _ := secureRandomFloat(-width*0.2, width*0.2)
 		offset2Y, _ := secureRandomFloat(-height*0.2, height*0.2)
-		
+
 		control1X += offset1X
 		control1Y += offset1Y
 		control2X += offset2X
 		control2Y += offset2Y
-		
+
 		return fmt.Sprintf("M%.2f,%.2f C%.2f,%.2f %.2f,%.2f %.2f,%.2f",
 			startX, startY, control1X, control1Y, control2X, control2Y, endX, endY)
-		
+
 	default:
 		// Sinusoidal curve using multiple quadratic segments
 		numSegments := 3
 		path := fmt.Sprintf("M%.2f,%.2f", startX, startY)
-		
+
 		for i := 1; i <= numSegments; i++ {
 			t := float64(i) / float64(numSegments)
 			segmentX := startX + (endX-startX)*t
 			segmentY := startY + (endY-startY)*t
-			
+
 			// Add sinusoidal variation
 			amplitude, _ := secureRandomFloat(10, 30)
 			offset := amplitude * (0.5 - 0.5*float64(i%2)) // Alternating pattern
-			
+
 			// Perpendicular offset
 			dx := endX - startX
 			dy := endY - startY
@@ -144,7 +144,7 @@ func (ng *NoiseGenerator) generateCurvePath(startX, startY, endX, endY, width, h
 				segmentX += perpX
 				segmentY += perpY
 			}
-			
+
 			if i == 1 {
 				path += fmt.Sprintf(" Q%.2f,%.2f %.2f,%.2f",
 					segmentX, segmentY, startX+(endX-startX)*0.5, startY+(endY-startY)*0.5)
@@ -152,7 +152,7 @@ func (ng *NoiseGenerator) generateCurvePath(startX, startY, endX, endY, width, h
 				path += fmt.Sprintf(" T%.2f,%.2f", segmentX, segmentY)
 			}
 		}
-		
+
 		return path
 	}
 }

@@ -56,4 +56,4 @@ secrets.yaml
 .vscode/
 
 # example
-example/*.svg
+examples/*.svg
